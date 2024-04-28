@@ -54,7 +54,7 @@
             <a href="innout.php" class="btn btn-success"> <i class="icofont-check mr-1"></i> Bater Ponto</a>
         </div>
     </div>
-
+    <?php if ($user->is_admin) :?>
     <form class="mt-5" action="innout.php" method="post">
         <label for="simular_ponto">Simular Ponto</label>
         <div class="input-group no-border">
@@ -62,4 +62,5 @@
             <button class="btn btn-danger ml-3">Simular Ponto</button>
         </div>
     </form>
+    <?php endif ?>
 </main>
